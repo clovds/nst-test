@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 0 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+// Input
+.input {
+  display: flex;
+  flex-direction: column;
+
+  .ins-input {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    margin: 0.5em 0;
+  }
+
+  .text-input {
+    text-align: center;
+    border-radius: 4px;
+    border-width: 1px;
+  }
+  .text-input:focus {
+    outline-color: #24a0ed;
+  }
+
+  .checkbox-input {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+// Execute Button
+.execute-button {
+  margin: 1em 0;
+
+  button {
+    background-color: transparent;
+    border: 1px solid gray;
+    color: black;
+    padding: 7px 15px;
+    margin: 0 0.5em;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+  }
+
+  button:hover {
+    background-color: #24a0ed;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline-color: #24a0ed;
+    background-color: #24a0ed;
+    color: white;
+  }
+}
+
+// Output
+.output {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  // width: 50vw;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
